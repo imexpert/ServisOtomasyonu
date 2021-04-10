@@ -1,0 +1,276 @@
+﻿<div class="col-xl-6">
+    <div class="card card-custom card-stretch gutter-b">
+        <!--begin::Header-->
+        <div class="card-header border-0">
+            <div class="card-toolbar">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Button group with nested dropdown">
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-success font-weight-bold dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Müşteri
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" asp-action="Index" asp-controller="Musteri">Yeni Müşteri Ekle</a>
+                            <a class="dropdown-item" href="#">Müşteri Düzenle</a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success font-weight-bold">Hız</button>
+                    <button type="button" class="btn btn-success font-weight-bold">Sipariş</button>
+                    <button type="button" class="btn btn-success font-weight-bold">Servis Aç</button>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-success font-weight-bold dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cihaz Bilgileri
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success font-weight-bold">Cihaz Geçmişi</button>
+                </div>
+            </div>
+        </div>
+        <!--end::Header-->
+        <!--begin::Body-->
+        <div class="card-body pt-2">
+            <div class="row">
+                <div class="col-xl-4 col-sm-4">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:100px">
+                                Cihaz :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-4">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:80px">
+                                Cari Kod :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-4">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:80px">
+                                Sektör :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-12 col-sm-12 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:100px">
+                                Unvan :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" aria-describedby="basic-addon2" name="Unvan" id="Unvan">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm-6 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:100px">
+                                Departman :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm-6 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:80px">
+                                Bölge :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-12 col-sm-12 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:100px">
+                                Adres :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-4 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:100px">
+                                Şehir :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-4 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:80px">
+                                İlçe :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-4 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:80px">
+                                Semt :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-4 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:100px">
+                                Yetkili :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-4 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:80px">
+                                Görev :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-4 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:80px">
+                                Cep Tel :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-4 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:100px">
+                                Telefon :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-4 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:80px">
+                                Dahili :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-4 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:80px">
+                                Faks :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm-6 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:100px">
+                                Bayi :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm-6 mt-1">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" style="width:80px">
+                                E-Mail :
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" disabled style="background-color:white" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end::Body-->
+    </div>
+</div>
+<div class="col-xl-6">
+    <div class="card card-custom card-stretch gutter-b">
+        <div class="card-body pt-2">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card card-custom gutter-b">
+                        <div id="kt_datatable"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal-->
+<div class="modal fade" id="modalArama" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Müşteri / Cihaz Arama</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="form-group mb-2">
+                                <label>Arama Kriterinizi Giriniz</label>
+                                <div class="input-group input-group-sm">
+                                    <input type="text" class="form-control" placeholder="Unvan, cihaz no, seri no" aria-describedby="basic-addon2" name="AramaKriter" id="AramaKriter">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="la la-search"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--begin: Datatable-->
+                        <div class="datatable datatable-bordered datatable-head-custom" id="kt_arama"></div>
+                        <!--end: Datatable-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/pages/anasayfa.js"></script>
+}
+

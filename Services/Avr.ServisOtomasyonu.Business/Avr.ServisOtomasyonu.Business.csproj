@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Avr.Core.Results\Avr.Core.Results.csproj" />
+    <ProjectReference Include="..\..\Core\Avr.Core.Security\Avr.Core.Security.csproj" />
+    <ProjectReference Include="..\..\Core\Avr.Utilities\Avr.Core.Utilities.csproj" />
+    <ProjectReference Include="..\..\Data\Avr.ServisOtomasyonu.DataAccess\Avr.ServisOtomasyonu.DataAccess.csproj" />
+    <ProjectReference Include="..\..\Models\Avr.ServisOtomasyonu.DataTransferObject\Avr.ServisOtomasyonu.DataTransferObject.csproj" />
+  </ItemGroup>
+
+</Project>
